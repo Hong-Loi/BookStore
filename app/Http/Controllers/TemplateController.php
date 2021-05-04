@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class TemplateController extends Controller
 {
     public function index(){
-        return view('template.home');
+        return view('template.index');
     }
     public function contactus(){
         return view ('template.contactus');
@@ -25,31 +25,22 @@ class TemplateController extends Controller
     public function authordetail(){
         return view ('template.authordetail');
     }
-    public function comingsoon(){
-        return view ('template.comingsoon');
+    public function book_detail(){
+        return view ('template.book_detail');
     }
-    public function index_2(){
-        return view ('template.index-2');
+    public function best_selling(){
+        return view ('template.best_selling');
     }
-    public function indexv3(){
-        return view ('template.indexv3');
+    public function cart(){
+        return view ('template.cart');
     }
-    public function newsdetail(){
-        return view ('template.newsdetail');
+    public function category_book(){
+        return view ('template.category_book');
     }
-    public function indexv2(){
-        return view ('template.indexv2');
+    public function handleCart(){
+        return view ('template.handleCart');
     }
-    public function newsgrid(){
-        return view ('template.newsgrid');
-    }
-    public function newslist(){
-        return view ('template.newslist');
-    }
-    public function productdetail(){
-        return view ('template.productdetail');
-    }
-    public function products(){
-        return view ('template.products');
+    public function new_book(){
+        return view ('template.new_book');
     }
 }

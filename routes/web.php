@@ -19,22 +19,21 @@ use App\Http\Controllers\TemplateController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/',[TemplateController::class,'index']);
-Route::get('/contactus.blade.php',[TemplateController::class,'contactus']);
-Route::get('/404error.blade.php',[TemplateController::class,'r404error']);
-Route::get('/aboutus.blade.php',[TemplateController::class,'aboutus']);
-Route::get('/authors.blade.php',[TemplateController::class,'authors']);
-Route::get('/authordetail.blade.php',[TemplateController::class,'authordetail']);
-Route::get('/comingsoon.blade.php',[TemplateController::class,'comingsoon']);////////////////
-Route::get('/index-2.blade.php',[TemplateController::class,'index_2']);
-Route::get('/indexv3.blade.php',[TemplateController::class,'indexv3']);
-Route::get('/newsdetail.blade.php',[TemplateController::class,'newsdetail']);
-Route::get('/indexv2.blade.php',[TemplateController::class,'indexv2']);
-Route::get('/newsgrid.blade.php',[TemplateController::class,'newsgrid']);
-Route::get('/newslist.blade.php',[TemplateController::class,'newslist']);
-Route::get('/productdetail.blade.php',[TemplateController::class,'productdetail']);
-Route::get('/products.blade.php',[TemplateController::class,'products']);
+Route::get('/index.blade.php',[TemplateController::class,'index']);//
+Route::get('/',[TemplateController::class,'index']);//
+Route::get('/contactus.blade.php',[TemplateController::class,'contactus']);//
+Route::get('/404error.blade.php',[TemplateController::class,'r404error']);//
+Route::get('/aboutus.blade.php',[TemplateController::class,'aboutus']);//
+Route::get('/authors.blade.php',[TemplateController::class,'authors']);//
+Route::get('/authordetail.blade.php',[TemplateController::class,'authordetail']);//
+Route::get('/best_selling.blade.php',[TemplateController::class,'best_selling']);////////////////
+Route::get('/book_detail.blade.php',[TemplateController::class,'book_detail']);
+Route::get('/cart.blade.php',[TemplateController::class,'cart']);
+Route::get('/category_book.blade.php',[TemplateController::class,'category_book']);
+Route::get('/handleCart.blade.php',[TemplateController::class,'handleCart']);
+Route::get('/new_book.blade.php',[TemplateController::class,'new_book']);
+//best_sell
+//book_detail.cart,category,handlecart,newbook
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),
@@ -69,5 +68,5 @@ Route::post('/email/verification-notification', function (Request $request) {
 
 
 
-Route::get('/',[lacontrol::class,'index']);
+
 

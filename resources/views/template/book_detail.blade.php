@@ -150,22 +150,7 @@
 		<!--************************************
 				Inner Banner Start
 		*************************************-->
-		<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-07.jpg">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="tg-innerbannercontent">
-							<h1>Authors</h1>
-							<ol class="tg-breadcrumb">
-								<li><a href="javascript:void(0);">home</a></li>
-								<li><a href="javascript:void(0);">Authors</a></li>
-								<li class="tg-active">Authors Title</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	
 		<!--************************************
 				Inner Banner End
 		*************************************-->
@@ -176,33 +161,52 @@
 			<!--************************************
 					Author Detail Start
 			*************************************-->
-			<div class="tg-sectionspace tg-haslayout">
+         
+		<div class="container">
+		<div class="tg-sectionspace tg-haslayout">
 				<div class="container">
 					<div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="tg-sectionhead">
+                                <h2><span>People’s Choice</span>Infomation book</h2>
+                            </div>
+                        </div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="tg-authordetail">
 								<figure class="tg-authorimg">
-									<img src="images/author/imag-25.jpg" alt="image description">
+									<img style="width: 200px; height: 250px" src="./images/img-01.jpg" alt="image description">
 								</figure>
 								<div class="tg-authorcontentdetail">
 									<div class="tg-sectionhead">
-										<h2><span>15,686 Published Books</span>Scarlet Hawthorne</h2>
-										<ul class="tg-socialicons">
-											<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-											<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-											<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-											<li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-											<li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
-										</ul>
+										<h2><span>Sold 15,686 Books</span>Scarlet Hawthorne</h2>
+								
 									</div>
-									<div class="tg-description">
-										<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore toloregna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoiars nisiuip commodo consequat aute irure dolor in aprehenderit aveli esseati cillum dolor fugiat nulla pariatur cepteur sint occaecat cupidatat.</p>
-										<p>Caanon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnisate natus error sit voluptatem accusantium doloremque totam rem aperiam, eaque ipsa quae abillo inventoe veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
-										<p>Voluptas sit asapernatur aut odit aut fugit, sed quia consequuntur magni dolores eos quistan ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-									</div>
-									<div class="tg-booksfromauthor">
+				               <form action="./cart.blade.php" method="post">
+                                <div class="tg-description">
+                                    <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore toloregna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoiars nisiuip commodo consequat aute irure dolor in aprehenderit aveli esseati cillum dolor fugiat nulla pariatur cepteur sint occaecat cupidatat.</p>
+                                    <br>
+                                    <div class="price">
+                                      <p style="font-size: 20px; font-style: normal;">Price:
+                                        <span style="margin-left: 300px; color: red;" class="new_price">
+                                          450.00
+                                          <sup> $ </sup>
+                                        </span>
+                                       </p>
+
+                                       <p style="font-size: 20px; font-style: normal;">Quantity:
+                                        <span style="margin-left: 260px; color: red;" class="new_price">
+                                            <input  type="number" id="quantity" value="1" name="quantity" min="1" max="10">
+                                        </span>
+                                       </p>
+                                       
+                                       <input type="submit" style="margin-left: 700px;" class="btn btn-primary" value="Add to cart" >
+
+                                </div>
+                            </form>
+                                    
+									<div class="tg-booksfromauthor" style="margin-top: 50px;">
 										<div class="tg-sectionhead">
-											<h2>Books of Scarlet</h2>
+											<h2>Related books</h2>
 										</div>
 										<div class="row">
 											<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
@@ -475,7 +479,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div></div>
 			<!--************************************
 					Author Detail End
 			*************************************-->

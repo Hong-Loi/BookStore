@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="zxx"> 
 
 <head>
 	<meta charset="utf-8">
@@ -144,123 +144,128 @@
 				</div>
 			</div>
 		</header>
-		<!--************************************
-				Header End
-		*************************************-->
-		<!--************************************
-				Inner Banner Start
-		*************************************-->
-		<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-07.jpg">
+        <!-- Banner -->
+        <div style="margin-bottom:80px " class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-07.jpg">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="tg-innerbannercontent">
-							<h1>Contact Us</h1>
+							<h1>Your cart</h1>
 							<ol class="tg-breadcrumb">
 								<li><a href="javascript:void(0);">home</a></li>
-								<li class="tg-active">Contact Us</li>
+								<li class="tg-active">Products</li>
 							</ol>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--************************************
-				Inner Banner End
-		*************************************-->
-		<!--************************************
-				Main Start
-		*************************************-->
-		<main id="tg-main" class="tg-main tg-haslayout">
-			<!--************************************
-					Contact Us Start
-			*************************************-->
-			<div class="tg-sectionspace tg-haslayout">
-				<div class="container">
-					<div class="row">
-						<div class="tg-contactus">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="tg-sectionhead">
-									<h2><span>Say Hello!</span>Get In Touch With Us</h2>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<div id="tg-locationmap" class="tg-locationmap tg-map"></div>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<form class="tg-formtheme tg-formcontactus">
-									<fieldset>
-										<div class="form-group">
-											<input type="text" name="first-name" class="form-control" placeholder="First Name*">
-										</div>
-										<div class="form-group">
-											<input type="text" name="last-name" class="form-control" placeholder="Last Name*">
-										</div>
-										<div class="form-group">
-											<input type="email" name="email" class="form-control" placeholder="Last Name*">
-										</div>
-										<div class="form-group">
-											<input type="text" name="subject" class="form-control" placeholder="Subject (optional)">
-										</div>
-										<div class="form-group tg-hastextarea">
-											<textarea placeholder="Comment"></textarea>
-										</div>
-										<div class="form-group">
-											<button type="submit" class="tg-btn tg-active">Submit</button>
-										</div>
-									</fieldset>
-								</form>
-								<div class="tg-contactdetail">
-									<div class="tg-sectionhead">
-										<h2>Get In Touch With Us</h2>
-									</div>
-									<ul class="tg-contactinfo">
-										<li>
-											<i class="icon-apartment"></i>
-											<address>Suit # 07, Rose world Building, Street # 02, AT246T Manchester</address>
-										</li>
-										<li>
-											<i class="icon-phone-handset"></i>
-											<span>
-												<em>0800 12345 - 678 - 89</em>
-												<em>+4 1234 - 4567 - 67</em>
-											</span>
-										</li>
-										<li>
-											<i class="icon-clock"></i>
-											<span>Serving 7 Days A Week From 9am - 5pm</span>
-										</li>
-										<li>
-											<i class="icon-envelope"></i>
-											<span>
-												<em><a href="mailto:support@domain.com">support@domain.com</a></em>
-												<em><a href="mailto:info@domain.com">info@domain.com</a></em>
-											</span>
-										</li>
-									</ul>
-									<ul class="tg-socialicons">
-										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-										<li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-										<li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--************************************
-					Contact Us End
-			*************************************-->
-		</main>
-		<!--************************************
-				Main End
-		*************************************-->
-		<!--************************************
-				Footer Start
-		*************************************-->
+		<!-- *****************cart****************? -->
+         <div class="container">
+          <form action="handleCart.blade.php" method="post">
+            <table class="table table-bordered" id="cart-summary">
+                <!-- TABLE HEADER START -->
+                <thead>
+                    <tr>
+                        <th class="cart-product">Preview</th>
+                        <th class="cart-description">Name</th>
+                        <th class="cart-avail text-center">Availability</th>
+                        <th class="cart-unit text-right">Price</th>
+                        <th class="cart_quantity text-center">Quantity</th>
+                        <th class="cart-delete">&nbsp;</th>
+                        <th class="cart-total text-right">Total</th>
+                    </tr>
+                </thead>
+                <!-- TABLE HEADER END -->
+                <!-- TABLE BODY START -->
+                <tbody>	
+                    <!-- SINGLE CART_ITEM START -->
+                    <tr>
+                        <td class="cart-product">
+                            <img style="width: 100px; height: 130px; " alt="Flowers in Chania" src="./images/img-01.jpg">
+                        </td>
+                        <td class="cart-description">
+                            <p class="product-name">Faded Short Sleeves T-shirt</p>
+                        </td>
+                        <td class="cart-avail"><span class="label label-success">In stock</span></td>
+                        <td class="cart-unit">
+                                <h5>$150</h5>
+                        </td>
+                        <td class="cart_quantity text-center">
+                            <input type="number" id="quantity" value="1" name="quantity" min="1" max="10">
+                        </td>
+                        <td class="cart-delete text-center">
+                            <span>
+                                <a href="#" class="cart_quantity_delete" title="Delete"><i class="fa fa-trash-o"></i></a>
+                            </span>
+                        </td>
+                        <td class="cart-total">
+                            <span class="price">$16.51</span>
+                        </td>
+                    </tr>
+                    <!-- SINGLE CART_ITEM END -->
+                    <!-- SINGLE CART_ITEM START -->
+                    <tr>
+                        <td class="cart-product">
+                            <img style="width: 100px; height: 130px; " alt="Flowers in Chania" src="./images/img-01.jpg">
+                        </td>
+                        <td class="cart-description">
+                            <p class="product-name">Faded Short Sleeves T-shirt</p>
+                        </td>
+                        <td class="cart-avail"><span class="label label-success">In stock</span></td>
+                        <td class="cart-unit">
+                                <h5>$150</h5>
+                        </td>
+                        <td class="cart_quantity text-center">
+                            <input type="number" id="quantity" value="1" name="quantity" min="1" max="10">
+                        </td>
+                        <td class="cart-delete text-center">
+                            <span>
+                                <a href="#" class="cart_quantity_delete" title="Delete"><i class="fa fa-trash-o"></i></a>
+                            </span>
+                        </td>
+                        <td class="cart-total">
+                            <span class="price">$16.51</span>
+                        </td>
+                    </tr>
+                    <!-- SINGLE CART_ITEM END -->
+                    <!-- SINGLE CART_ITEM START -->
+                    <tr>
+                        <td class="cart-product">
+                            <img style="width: 100px; height: 130px; " alt="Flowers in Chania" src="./images/img-01.jpg">
+                        </td>
+                        <td class="cart-description">
+                            <p class="product-name">Faded Short Sleeves T-shirt</p>
+                        </td>
+                        <td class="cart-avail"><span class="label label-success">In stock</span></td>
+                        <td class="cart-unit">
+                                <h5>$150</h5>
+                        </td>
+                        <td class="cart_quantity text-center">
+                            <input type="number" id="quantity" value="1" name="quantity" min="1" max="10">
+                        </td>
+                        <td class="cart-delete text-center">
+                            <span>
+                                <a href="#" class="cart_quantity_delete" title="Delete"><i class="fa fa-trash-o"></i></a>
+                            </span>
+                        </td>
+                        <td class="cart-total">
+                            <span class="price">$16.51</span>
+                        </td>
+                    </tr>
+                    <!-- SINGLE CART_ITEM END -->
+                </tbody>
+                <!-- TABLE BODY END -->
+                <!-- TABLE FOOTER START -->
+               		
+                <!-- TABLE FOOTER END -->									
+            </table>
+            <input type="submit" style="width: 130px; height: 50px; background-color: aqua; color: black; border-radius: 50px; margin-left: 1000px; margin-bottom: 90px;" value="Submit" >
+          </form>
+              
+         </div>
+
+        <!-- ************************************* -->
 		<footer id="tg-footer" class="tg-footer tg-haslayout">
 			<div class="tg-footerarea">
 				<div class="container">
