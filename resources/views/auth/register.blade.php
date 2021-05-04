@@ -26,6 +26,8 @@
                 <x-jet-input id="phone" class="block mt-1 w-full" type="tel" name="phone" placeholder="056 8442 815" 
                     required />
             </div>
+            
+
             <div class="mt-4">
                 <x-jet-label for="password" value="{{ __('Password') }}" />
                 <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required
@@ -37,7 +39,12 @@
                 <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password"
                     name="password_confirmation" required autocomplete="new-password" />
             </div>
-
+            <!-- address add here -->
+            <div class="mt-4">
+                <x-jet-label for="address" value="{{ __('Address') }}" />
+                <x-jet-input id="address" class="block mt-1 w-full" type="tel" name="address" placeholder="44 lê văn chí, phường Linh Trung, Quận Thủ Đức" 
+                    required />
+            </div>
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
             <div class="mt-4">
                 <x-jet-label for="terms">
